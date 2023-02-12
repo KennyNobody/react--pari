@@ -1,11 +1,11 @@
 import React from 'react';
 
-function AboutPage() {
+function NewsPage() {
     return (
         <div>
-            ABOUT PAGE
+            NEWS PAGE
         </div>
     );
 }
 
-export default AboutPage;
+export default NewsPage;
