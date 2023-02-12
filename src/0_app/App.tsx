@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './styles/index.scss';
+import i18n from "5_shared/config/i18n/i18n";
 
 import {classNames} from "5_shared/libs/classNames/classNames";
 import {useTheme} from "0_app/provider/ThemeProvider";
@@ -13,9 +14,11 @@ function App() {
 
     return (
         <div className={classNames('app', {}, [theme])}>
-            <Header />
-            <AppRouter />
-            <Footer/>
+            <Suspense fallback={""}>
+                <Header />
+                <AppRouter />
+                <Footer/>
+            </Suspense>
         </div>
     );
 }

@@ -1,9 +1,11 @@
-import React from 'react';
+import {useTranslation} from "react-i18next";
 
 function NewsPage() {
+    const { t } = useTranslation();
+
     return (
         <div>
-            NEWS PAGE
+            {t('titleNewsPage')}
         </div>
     );
 }

@@ -1,9 +1,11 @@
-import React from 'react';
+import {useTranslation} from "react-i18next";
 
 function StadiumPage() {
+    const { t } = useTranslation();
+
     return (
         <div>
-            STADIUM PAGE
+            {t('titleStadiumPage')}
         </div>
     );
 }
