@@ -1,16 +1,16 @@
-import {classNames} from "5_shared/libs/classNames/classNames";
-import cls from "./Header.module.scss";
-import {Link} from "react-router-dom";
-import {Logo} from "5_shared/ui/Logo/Logo";
-import {ThemeSwitcher} from "5_shared/ui/ThemeSwitcher";
-import {useTranslation} from "react-i18next"
-import {LanguageSwitcher} from "3_features/LanguageSwitcher";
+import { classNames } from '5_shared/libs/classNames/classNames';
+import { Link } from 'react-router-dom';
+import { Logo } from '5_shared/ui/Logo/Logo';
+import { ThemeSwitcher } from '5_shared/ui/ThemeSwitcher';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '3_features/LanguageSwitcher';
+import cls from './Header.module.scss';
 
 interface HeaderProps {
     className?: string
 }
 
-export const Header = ({className}: HeaderProps) => {
+export function Header({ className }: HeaderProps) {
     const { t } = useTranslation();
 
     return (
@@ -19,13 +19,13 @@ export const Header = ({className}: HeaderProps) => {
                 <div className={classNames(cls.navbar)}>
                     <Logo />
                     <nav className={classNames(cls.nav)}>
-                        <Link className={classNames(cls.link)} to={'/'}>
+                        <Link className={classNames(cls.link)} to="/">
                             {t('titleMainPage')}
                         </Link>
-                        <Link className={classNames(cls.link)} to={'/news'}>
+                        <Link className={classNames(cls.link)} to="/news">
                             {t('titleNewsPage')}
                         </Link>
-                        <Link className={classNames(cls.link)} to={'/stadium'}>
+                        <Link className={classNames(cls.link)} to="/stadium">
                             {t('titleStadiumPage')}
                         </Link>
                     </nav>
@@ -35,4 +35,4 @@ export const Header = ({className}: HeaderProps) => {
             </div>
         </header>
     );
-};
+}

@@ -8,6 +8,7 @@ declare module '*.scss' {
 
 declare module '*.svg' {
     import React from 'react';
+
     const svg: React.VFC<React.SVGProps<SVGElement>>;
     export default svg;
 }

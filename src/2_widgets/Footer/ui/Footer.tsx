@@ -1,13 +1,13 @@
-import {classNames} from "5_shared/libs/classNames/classNames";
-import cls from "./Footer.module.scss";
-import {useTranslation} from "react-i18next";
+import { classNames } from '5_shared/libs/classNames/classNames';
+import { useTranslation } from 'react-i18next';
+import cls from './Footer.module.scss';
 
 interface FooterProps {
     className?: string
 }
 
-export const Footer = ({className}: FooterProps) => {
-    const { t, i18n } = useTranslation();
+export function Footer({ className }: FooterProps) {
+    const { t } = useTranslation();
 
     return (
         <footer className={classNames(cls.footer, {}, [className])}>
@@ -16,4 +16,4 @@ export const Footer = ({className}: FooterProps) => {
             </div>
         </footer>
     );
-};
+}
