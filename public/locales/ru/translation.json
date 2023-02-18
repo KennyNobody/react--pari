@@ -2,5 +2,6 @@
   "footer": "подвал",
   "titleMainPage": "главная",
   "titleNewsPage": "новости",
-  "titleStadiumPage": "стадион"
+  "titleStadiumPage": "стадион",
+  "titleNotFoundPage": "страница не найдена"
 }
