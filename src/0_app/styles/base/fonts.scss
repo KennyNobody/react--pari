@@ -1,1 +1,107 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+    font-family: Buyan;
+    src:
+        url("5_shared/assets/fonts/Buyan-Regular.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Buyan-Regular.woff") format("woff"),
+        url("5_shared/assets/fonts/Buyan-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Buyan;
+    src:
+        url("5_shared/assets/fonts/Buyan-Bold.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Buyan-Bold.woff") format("woff"),
+        url("5_shared/assets/fonts/Buyan-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Buyan;
+    src:
+        url("5_shared/assets/fonts/Buyan-Thin.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Buyan-Thin.woff") format("woff"),
+        url("5_shared/assets/fonts/Buyan-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Manrope;
+    src:
+        url("5_shared/assets/fonts/Manrope-ExtraBold.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Manrope-ExtraBold.woff") format("woff"),
+        url("5_shared/assets/fonts/Manrope-ExtraBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Manrope;
+    src:
+        url("5_shared/assets/fonts/Manrope-Light.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Manrope-Light.woff") format("woff"),
+        url("5_shared/assets/fonts/Manrope-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Manrope;
+    src:
+        url("5_shared/assets/fonts/Manrope-Bold.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Manrope-Bold.woff") format("woff"),
+        url("5_shared/assets/fonts/Manrope-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Manrope;
+    src:
+        url("5_shared/assets/fonts/Manrope-ExtraLight.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Manrope-ExtraLight.woff") format("woff"),
+        url("5_shared/assets/fonts/Manrope-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Manrope;
+    src:
+        url("5_shared/assets/fonts/Manrope-Medium.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Manrope-Medium.woff") format("woff"),
+        url("5_shared/assets/fonts/Manrope-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Manrope;
+    src:
+        url("5_shared/assets/fonts/Manrope-SemiBold.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Manrope-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Manrope;
+    src:
+        url("5_shared/assets/fonts/Manrope-Regular.woff2") format("woff2"),
+        url("5_shared/assets/fonts/Manrope-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

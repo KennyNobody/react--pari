@@ -19,5 +19,16 @@
     font-weight: 400;
     line-height: 1.2;
     text-decoration: none;
+    transition: 0.3s opacity;
     text-transform: uppercase;
+    color: var(--color-blue-dark);
+    font-family: var(--font-family-title);
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &.active {
+        color: var(--color-blue-light);
+    }
 }
