@@ -1,3 +1,12 @@
 .footer {
+    padding-top: 75px;
+    padding-bottom: 50px;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
 
+.footerContent {
+    gap: 50px;
+    display: flex;
+    align-items: center;
 }

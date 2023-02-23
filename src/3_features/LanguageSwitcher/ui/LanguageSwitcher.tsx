@@ -8,16 +8,21 @@ interface LanguageSwitcherProps {
 }
 
 export function LanguageSwitcher({ className }: LanguageSwitcherProps) {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
 
     const toggleLanguage = (val: string) => {
         i18n.changeLanguage(i18n.language = val);
     };
 
     return (
-        <select className={classNames(cls.select)} onChange={(e) => toggleLanguage(e.target.value)}>
+        <select
+            className={classNames(cls.select)}
+            onChange={(e) => toggleLanguage(e.target.value)}
+            defaultValue={i18n.resolvedLanguage}
+        >
             <option value="ru">RUS</option>
             <option value="en">ENG</option>
         </select>
+
     );
 }

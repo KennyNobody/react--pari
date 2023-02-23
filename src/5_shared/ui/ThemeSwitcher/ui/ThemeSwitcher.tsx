@@ -12,10 +12,8 @@ export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
     const { toggleTheme } = useTheme();
 
     return (
-        <div className={classNames(cls.themeSwitcher, {}, [className])}>
-            <button onClick={toggleTheme} type="button">
-                <IconEye className="icon" />
-            </button>
-        </div>
+        <button className={classNames(cls.button, {}, [className])} onClick={toggleTheme} type="button">
+            <IconEye className="icon" />
+        </button>
     );
 }

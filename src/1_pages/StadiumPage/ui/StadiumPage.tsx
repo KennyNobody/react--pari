@@ -4,9 +4,13 @@ function StadiumPage() {
     const { t } = useTranslation();
 
     return (
-        <div>
-            {t('titleStadiumPage')}
-        </div>
+        <main>
+            <section className="section-about">
+                <div className="container">
+                    {t('titleStadiumPage')}
+                </div>
+            </section>
+        </main>
     );
 }
 

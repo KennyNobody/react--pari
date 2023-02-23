@@ -3,5 +3,10 @@
   "titleMainPage": "main",
   "titleNewsPage": "news",
   "titleStadiumPage": "stadium",
-  "titleNotFoundPage": "not found"
+  "titleNotFoundPage": "not found",
+  "errorTitle": "unknown error",
+  "refreshPage": "refresh page",
+  "titleNews": "news",
+  "titleShop": "shop"
+
 }

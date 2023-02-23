@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import './styles/index.scss';
 
 import { classNames } from '5_shared/libs/classNames/classNames';
@@ -10,6 +10,10 @@ import { Footer } from '2_widgets/Footer';
 
 function App() {
     const { theme } = useTheme();
+
+    useEffect(() => {
+        // throw new Error();
+    }, []);
 
     return (
         <div className={classNames('app', {}, [theme])}>

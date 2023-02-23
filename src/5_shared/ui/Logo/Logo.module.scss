@@ -1,6 +1,28 @@
-.logo {
-    width: 40px;
-    height: 40px;
+.logoHeader {
+    width: 68px;
+    height: 97px;
     display: block;
-    background-color: blue;
+    transition: 0.3s opacity;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.logoFooter {
+    width: 84px;
+    height: 122px;
+    display: block;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
 }

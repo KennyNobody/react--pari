@@ -4,9 +4,23 @@ function MainPage() {
     const { t } = useTranslation();
 
     return (
-        <div>
-            {t('titleMainPage')}
-        </div>
+        <main data-testid="mainPage">
+            <section className="section-intro">
+                <div className="container">
+                    {t('titleMainPage')}
+                </div>
+            </section>
+            <section className="section-news">
+                <div className="container">
+                    {t('titleNews')}
+                </div>
+            </section>
+            <section className="section-shop">
+                <div className="container">
+                    {t('titleShop')}
+                </div>
+            </section>
+        </main>
     );
 }
 

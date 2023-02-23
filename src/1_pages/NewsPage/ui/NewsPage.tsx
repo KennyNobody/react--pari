@@ -4,9 +4,13 @@ function NewsPage() {
     const { t } = useTranslation();
 
     return (
-        <div>
-            {t('titleNewsPage')}
-        </div>
+        <main>
+            <section className="section-news">
+                <div className="container">
+                    {t('titleNewsPage')}
+                </div>
+            </section>
+        </main>
     );
 }
 

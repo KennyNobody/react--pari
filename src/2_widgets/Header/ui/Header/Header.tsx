@@ -17,7 +17,7 @@ export function Header({ className }: HeaderProps) {
         <header className={classNames(cls.header, {}, [className])}>
             <div className="container">
                 <div className={classNames(cls.navbar)}>
-                    <Logo />
+                    <Logo className="logo-header" type="header" />
                     <nav className={classNames(cls.nav)}>
                         <Link className={classNames(cls.link)} to="/">
                             {t('titleMainPage')}

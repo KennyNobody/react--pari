@@ -3,5 +3,9 @@
   "titleMainPage": "главная",
   "titleNewsPage": "новости",
   "titleStadiumPage": "стадион",
-  "titleNotFoundPage": "страница не найдена"
+  "titleNotFoundPage": "страница не найдена",
+  "errorTitle": "неизвестная ошибка",
+  "refreshPage": "обновить страницу",
+  "titleNews": "новости",
+  "titleShop": "магазин"
 }

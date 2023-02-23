@@ -4,9 +4,13 @@ function NotFoundPage() {
     const { t } = useTranslation();
 
     return (
-        <div>
-            {t('titleNotFoundPage')}
-        </div>
+        <section className="section-404">
+            <div className="container">
+                <div>
+                    {t('titleNotFoundPage')}
+                </div>
+            </div>
+        </section>
     );
 }
 
