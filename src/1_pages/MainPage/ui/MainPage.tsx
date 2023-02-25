@@ -1,23 +1,14 @@
 import { useTranslation } from 'react-i18next';
-import { Button } from '5_shared/ui/Button/Button';
+import { classNames } from '5_shared/libs/classNames/classNames';
+import cls from './MainPage.module.scss';
 
 function MainPage() {
     const { t } = useTranslation();
 
     return (
-        <main data-testid="mainPage">
+        <main className={classNames(cls.main, {}, [])} data-testid="mainPage">
             <section className="section-intro">
                 <div className="container">
-                    <Button label="Купить билет" size="small" typeEl="link" />
-                    <br />
-                    <Button label="Оставить заявку" size="medium" typeEl="button" theme="inverted" />
-                    <br />
-                    <Button label="Перейти к альбомам" size="large" typeEl="button" />
-                    <br />
-                    <Button label="Я кнопочка" typeEl="button" />
-                    <br />
-                    <Button label="Я кнопочка" size="full" typeEl="button" />
-                    <br />
                     {t('titleMainPage')}
                 </div>
             </section>

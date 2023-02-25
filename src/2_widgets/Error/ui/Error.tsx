@@ -14,11 +14,12 @@ export const Error = ({ className }: ErrorProps) => {
     };
 
     return (
-        <div className={classNames(cls.error, {}, [className])}>
-            <h1 className={classNames(cls.text, {}, [className])}>
+        <div className={classNames(cls.error, {}, [])}>
+            <h1 className={classNames(cls.text, {}, [])}>
                 {t('errorTitle')}
             </h1>
-            <button className={classNames(cls.button, {}, [className])} type="button" onClick={reloadPage}>
+
+            <button className={classNames(cls.button, {}, [])} type="button" onClick={reloadPage}>
                 {t('refresh page')}
             </button>
         </div>

@@ -1,17 +1,17 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Header } from './Header';
+import { Error } from './Error';
 
 export default {
-    title: 'widget/Header',
-    component: Header,
+    title: 'widget/Error',
+    component: Error,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof Header>;
+} as ComponentMeta<typeof Error>;
 
-const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
+const Template: ComponentStory<typeof Error> = (args) => <Error {...args} />;
 
 export const Regular = Template.bind({});
 Regular.args = {};

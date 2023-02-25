@@ -1,17 +1,17 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Header } from './Header';
+import NewsPage from './NewsPage';
 
 export default {
-    title: 'widget/Header',
-    component: Header,
+    title: 'pages/NewsPage',
+    component: NewsPage,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof Header>;
+} as ComponentMeta<typeof NewsPage>;
 
-const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
+const Template: ComponentStory<typeof NewsPage> = (args) => <NewsPage />;
 
 export const Regular = Template.bind({});
 Regular.args = {};
