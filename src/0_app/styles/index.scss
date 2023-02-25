@@ -5,10 +5,12 @@
 @import "./base/index";
 
 .app {
+    width: 100%;
     display: flex;
     font-size: 18px;
     min-height: 100vh;
     flex-direction: column;
+    align-items: flex-start;
     color: var(--color-primary);
     background: var(--color-white);
     justify-content: space-between;

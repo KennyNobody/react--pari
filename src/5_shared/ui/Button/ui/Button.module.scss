@@ -1,3 +1,171 @@
 .button {
+    gap: 15px;
+    height: 50px;
     display: flex;
+    color: inherit;
+    cursor: pointer;
+    font-size: 20px;
+    border-top: none;
+    background: none;
+    position: relative;
+    align-items: center;
+    border-bottom: none;
+    text-decoration: none;
+    border-left: 2px solid;
+    justify-content: center;
+    border-right: 2px solid;
+    transition: 0.3s opacity;
+    font-family: var(--font-family-title);
+
+    &.small {
+        min-width: 175px;
+    }
+
+    &.medium {
+        min-width: 205px;
+    }
+
+    &.large {
+        min-width: 225px;
+    }
+
+    &.full {
+        width: 100%;
+    }
+
+    &.regular {
+        border-color: var(--color-blue-dark);
+
+        .button__top {
+            &::before {
+                background-color: var(--color-blue-dark);
+            }
+
+            &::after {
+                background-color: var(--color-blue-dark);
+            }
+        }
+
+        .button__bottom {
+            &::before {
+                background-color: var(--color-blue-dark);
+            }
+
+            &::after {
+                background-color: var(--color-blue-dark);
+            }
+        }
+    }
+
+    &.inverted {
+        color: var(--color-white);
+        border-color: var(--color-white);
+
+        .button__top {
+            &::before {
+                background-color: var(--color-white);
+            }
+
+            &::after {
+                background-color: var(--color-white);
+            }
+        }
+
+        .button__bottom {
+            &::before {
+                background-color: var(--color-white);
+            }
+
+            &::after {
+                background-color: var(--color-white);
+            }
+        }
+    }
+
+    &:hover {
+        opacity: 0.7;
+
+        .button__top {
+            &::before {
+                width: 0;
+            }
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        .button__bottom {
+            &::before {
+                width: 0;
+            }
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__top {
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        display: block;
+        position: absolute;
+
+        &::before {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 23px;
+            content: "";
+            position: absolute;
+            transition: 0.3s width;
+        }
+
+        &::after {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            position: absolute;
+            transition: 0.3s width;
+            width: calc(100% - 40px);
+        }
+    }
+
+    &__bottom {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        display: block;
+        position: absolute;
+
+        &::before {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 23px;
+            content: "";
+            position: absolute;
+            transition: 0.3s width;
+        }
+
+        &::after {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            content: "";
+            position: absolute;
+            width: calc(100% - 40px);
+            transition: 0.3s width;
+        }
+    }
+
+    &__text {
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
 }

@@ -6,11 +6,11 @@ import LogoLight from '5_shared/assets/icons/logo-light.svg';
 
 import cls from './Logo.module.scss';
 
-type LogoTypeProps = 'header' | 'footer';
+type LogoType = 'header' | 'footer';
 
 interface LogoProps {
     className?: string;
-    type: LogoTypeProps
+    type: LogoType
 }
 
 export function Logo({ className, type }: LogoProps) {
