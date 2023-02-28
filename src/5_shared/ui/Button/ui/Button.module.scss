@@ -18,6 +18,69 @@
     transition: 0.3s opacity;
     font-family: var(--font-family-title);
 
+    &__top {
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        display: block;
+        position: absolute;
+
+        &::before {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 23px;
+            content: "";
+            position: absolute;
+            transition: 0.3s width;
+        }
+
+        &::after {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            position: absolute;
+            transition: 0.3s width;
+            width: calc(100% - 40px);
+        }
+    }
+
+    &__bottom {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        display: block;
+        position: absolute;
+
+        &::before {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 23px;
+            content: "";
+            position: absolute;
+            transition: 0.3s width;
+        }
+
+        &::after {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            content: "";
+            position: absolute;
+            width: calc(100% - 40px);
+            transition: 0.3s width;
+        }
+    }
+
+    &__text {
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
     &.small {
         min-width: 175px;
     }
@@ -105,68 +168,5 @@
                 width: 100%;
             }
         }
-    }
-
-    &__top {
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 2px;
-        display: block;
-        position: absolute;
-
-        &::before {
-            top: 0;
-            left: 0;
-            bottom: 0;
-            width: 23px;
-            content: "";
-            position: absolute;
-            transition: 0.3s width;
-        }
-
-        &::after {
-            top: 0;
-            right: 0;
-            bottom: 0;
-            content: "";
-            position: absolute;
-            transition: 0.3s width;
-            width: calc(100% - 40px);
-        }
-    }
-
-    &__bottom {
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 2px;
-        display: block;
-        position: absolute;
-
-        &::before {
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 23px;
-            content: "";
-            position: absolute;
-            transition: 0.3s width;
-        }
-
-        &::after {
-            top: 0;
-            left: 0;
-            bottom: 0;
-            content: "";
-            position: absolute;
-            width: calc(100% - 40px);
-            transition: 0.3s width;
-        }
-    }
-
-    &__text {
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
     }
 }
