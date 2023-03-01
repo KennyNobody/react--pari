@@ -8,7 +8,7 @@ on:
   workflow_dispatch: # Fix for manually running from web-dashboard
 jobs:
   pipeline:
-    runs-on: windows-2019
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node_version: [ 17.x ]
