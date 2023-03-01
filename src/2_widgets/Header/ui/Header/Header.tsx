@@ -1,9 +1,10 @@
 import { classNames } from '5_shared/libs/classNames/classNames';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Logo } from '5_shared/ui/Logo/Logo';
 import { ThemeSwitcher } from '5_shared/ui/ThemeSwitcher';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from '3_features/LanguageSwitcher';
+import { RoutePath } from '5_shared/config/routeConfig/routeConfig';
 import cls from './Header.module.scss';
 
 interface HeaderProps {
@@ -19,15 +20,15 @@ export function Header({ className }: HeaderProps) {
                 <div className={classNames(cls.navbar)}>
                     <Logo className="logo-header" type="header" />
                     <nav className={classNames(cls.nav)}>
-                        <Link className={classNames(cls.link)} to="/">
+                        <NavLink className={classNames(cls.link)} to={RoutePath.main}>
                             {t('titleMainPage')}
-                        </Link>
-                        <Link className={classNames(cls.link)} to="/news">
+                        </NavLink>
+                        <NavLink className={classNames(cls.link)} to={RoutePath.news}>
                             {t('titleNewsPage')}
-                        </Link>
-                        <Link className={classNames(cls.link)} to="/stadium">
+                        </NavLink>
+                        <NavLink className={classNames(cls.link)} to={RoutePath.stadium}>
                             {t('titleStadiumPage')}
-                        </Link>
+                        </NavLink>
                     </nav>
                     <ThemeSwitcher />
                     <LanguageSwitcher />

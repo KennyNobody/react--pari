@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import LogoColor from '5_shared/assets/icons/logo-color.svg';
 import LogoLight from '5_shared/assets/icons/logo-light.svg';
 
+import { RoutePath } from '5_shared/config/routeConfig/routeConfig';
 import cls from './Logo.module.scss';
 
 type LogoType = 'header' | 'footer';
@@ -25,7 +26,7 @@ export function Logo({ className, type }: LogoProps) {
 
     const activeLogo = (
         <Link
-            to="/"
+            to={RoutePath.main}
             data-testid="logoHeader"
             className={classNames(cls.logoHeader, {}, [className])}
         >
