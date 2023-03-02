@@ -1,5 +1,5 @@
 import { classNames } from '5_shared/libs/classNames/classNames';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Logo } from '5_shared/ui/Logo/Logo';
 import { ThemeSwitcher } from '5_shared/ui/ThemeSwitcher';
 import { useTranslation } from 'react-i18next';
